@@ -7,6 +7,9 @@ set --export PATH $HOME/.nodebrew/current/bin $PATH
 # functions
 function reload-config ; source ~/.config/fish/config.fish ; end
 
+# cask
+set --export HOMEBREW_CASK_OPTS "--appdir=/Applications"
+
 # Apps
 alias g      "git"
 alias server "python -m SimpleHTTPServer"
