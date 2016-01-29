@@ -21,6 +21,7 @@
 	rename = mv
 	dammit = reset --soft HEAD^
 [core]
-	excludesfile = /Users/myakura/.gitignore
+	excludesfile = ~/.gitignore
+	attributesfile = ~/.gitattributes
 [diff "exif"]
 	textconv = exiftool
