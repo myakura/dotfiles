@@ -16,6 +16,7 @@
 	mom = merge origin/master
 	mum = merge upstream/master
 	addup = remote add upstream
+	amend = commit --amend --reuse-message=HEAD
 	diffc = diff --cached
 	rename = mv
 	dammit = reset --soft HEAD^
