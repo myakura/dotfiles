@@ -1,0 +1,25 @@
+[user]
+	name = Masataka Yakura
+	email = masataka.yakura@gmail.com
+[credential]
+	helper = osxkeychain
+[alias]
+	co = checkout
+	ci = commit
+	st = status -sb
+	br = branch
+	fo = fetch origin
+	fu = fetch upstream
+	wd = diff --word-diff
+	lg = log --graph --pretty=oneline --decorate --date=short --abbrev-commit --branches
+	cm = commit -m
+	mom = merge origin/master
+	mum = merge upstream/master
+	addup = remote add upstream
+	diffc = diff --cached
+	rename = mv
+	dammit = reset --soft HEAD^
+[color]
+	ui = true
+[core]
+	excludesfile = /Users/myakura/.gitignore

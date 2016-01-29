@@ -1,0 +1,18 @@
+# System
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+Desktop.ini
+Thumbs.db
+
+# Node
+node_modules
+
+# Sass
+.sass-cache
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
