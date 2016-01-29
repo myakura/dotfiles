@@ -4,13 +4,8 @@ set fish_greeting ""
 # PATH
 set --export PATH $HOME/.nodebrew/current/bin $PATH
 
-# variables
-set --export config_fish ~/.config/fish/config.fish
-
 # functions
-function reload-config
-  source $config_fish
-end
+function reload-config ; source ~/.config/fish/config.fish ; end
 
 # Apps
 alias g      "git"
