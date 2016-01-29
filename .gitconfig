@@ -23,3 +23,5 @@
 	ui = true
 [core]
 	excludesfile = /Users/myakura/.gitignore
+[diff "exif"]
+	textconv = exiftool
