@@ -2,24 +2,34 @@
 set fish_greeting ""
 
 # PATH
-set -x PATH /usr/local/bin /usr/local/sbin /usr/bin /bin /usr/sbin /sbin
-set -x PATH /Users/myakura/.nodebrew/current/bin $PATH
+set --export PATH $HOME/.nodebrew/current/bin $PATH
+
+# variables
+set --export config_fish ~/.config/fish/config.fish
+
+# functions
+function reload-config
+  source $config_fish
+end
 
 # Apps
-alias g="git"
-alias server="python -m SimpleHTTPServer"
+alias g      "git"
+alias server "python -m SimpleHTTPServer"
 
 # File and directory
-alias rm="rmtrash"
-alias trash="rmtrash"
-alias cpdir="cp -pR"
-alias cp="cp -i"
+alias c     "clear"
+alias u     "cd $HOME/"
+alias p     "cd $HOME/projects/"
+alias cp    "cp -i"
+alias up    "cd .."
+alias trash "rmtrash"
+alias cpdir "cp -pR"
 
 # Homebrew, npm
-alias brewup="brew update; and brew upgrade --all; and brew cleanup; and brew prune"
-alias npmup="npm cache clean; and npm update -g"
-alias allup="npmup; brewup"
+alias brewup "brew update; and brew upgrade --all; and brew cleanup; and brew prune"
+alias npmup  "npm cache clean; and npm update -g"
+alias allup  "npmup; brewup"
 
 # Git
-alias pull="git pull"
-alias fumum="git fetch upstream; and git merge upstream/master"
+alias pull  "git pull"
+alias fumum "git fetch upstream; and git merge upstream/master"
