@@ -20,8 +20,6 @@
 	diffc = diff --cached
 	rename = mv
 	dammit = reset --soft HEAD^
-[color]
-	ui = true
 [core]
 	excludesfile = /Users/myakura/.gitignore
 [diff "exif"]
