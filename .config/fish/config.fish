@@ -12,6 +12,8 @@ set --export HOMEBREW_CASK_OPTS "--appdir=/Applications"
 
 # Apps
 alias g      "git"
+alias vi     "nvim"
+alias vim    "nvim"
 alias server "python -m SimpleHTTPServer"
 
 # File and directory
