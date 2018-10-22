@@ -3,6 +3,8 @@ set fish_greeting ""
 
 # PATH
 set --export PATH $HOME/.nodebrew/current/bin $PATH
+set --export PATH $HOME/.cargo/bin $PATH
+set --export PATH $HOME/tools/flutter/bin $PATH
 
 # functions
 function reload-config ; source ~/.config/fish/config.fish ; end
