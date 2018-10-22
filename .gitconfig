@@ -12,14 +12,18 @@
 	fu = fetch upstream
 	wd = diff --word-diff
 	lg = log --graph --pretty=oneline --decorate --date=short --abbrev-commit --branches
-	cm = commit -m
 	mom = merge origin/master
 	mum = merge upstream/master
-	addup = remote add upstream
+	move = mv
+	undo = reset --soft HEAD^
 	amend = commit --amend --reuse-message=HEAD
 	diffc = diff --cached
 	rename = mv
-	dammit = reset --soft HEAD^
+	unstage = reset -q HEAD --
+	discard = checkout --HEAD~
+	stashes = stash list
+	remotes = remote -v
+	nevermind = !git reset --hard HEAD && git clean -d -f
 [core]
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
