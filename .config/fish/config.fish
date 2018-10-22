@@ -23,10 +23,8 @@ alias up    "cd .."
 alias trash "rmtrash"
 alias cpdir "cp -pR"
 
-# Homebrew, npm
-alias brewup "brew update; and brew upgrade --all; and brew cleanup; and brew prune"
-alias npmup  "npm cache clean; and npm update -g"
-alias allup  "npmup; brewup"
+# Homebrew
+alias brewup "brew update; and brew upgrade; and brew cleanup; and brew prune"
 
 # Git
 alias pull  "git pull"
