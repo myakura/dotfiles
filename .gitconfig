@@ -5,12 +5,8 @@
 	helper = osxkeychain
 [alias]
 	co = checkout
-	ci = commit
 	st = status -sb
 	br = branch
-	fo = fetch origin
-	fu = fetch upstream
-	wd = diff --word-diff
 	lg = log --graph --pretty=oneline --decorate --date=short --abbrev-commit --branches
 	mom = merge origin/master
 	mum = merge upstream/master
@@ -21,15 +17,6 @@
 	rename = mv
 	unstage = reset -q HEAD --
 	discard = checkout --HEAD~
-	stashes = stash list
 	remotes = remote -v
-	nevermind = !git reset --hard HEAD && git clean -d -f
 [core]
 	excludesfile = ~/.gitignore
-	attributesfile = ~/.gitattributes
-[diff "exif"]
-	textconv = exiftool
-[pager]
-	log = diff-highlight | less -r
-	show = diff-highlight | less -r
-	diff = diff-highlight | less -r
