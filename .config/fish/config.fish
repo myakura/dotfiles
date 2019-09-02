@@ -5,19 +5,21 @@ set fish_greeting ""
 set --export PATH $HOME/.nodebrew/current/bin $PATH
 
 # functions
-function reload-config ; source ~/.config/fish/config.fish ; end
+function config-edit ; vi ~/.config/fish/config.fish ; end
+function config-reload ; source ~/.config/fish/config.fish ; end
 
-# Apps
-alias g      "git"
+# apps
+abbr --add --global g git
 alias server "python3 -m http.server"
 
-# File and directory
-alias u     "cd $HOME/"
-alias p     "cd $HOME/projects/"
-alias cp    "cp -i"
+# aile and directory
+abbr --add --global c clear
+alias u "cd $HOME/"
+alias p "cd $HOME/projects/"
+alias l "cd $HOME/learn/"
 
 # Homebrew
-alias brewup "brew update; and brew upgrade"
+abbr --add --global brewup "brew update && brew upgrade"
 
 # Git
-alias fumum "git fetch upstream; and git merge upstream/master"
+abbr --add --global fumum "git fetch upstream && git merge upstream/master"
