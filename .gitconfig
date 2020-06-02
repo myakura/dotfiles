@@ -1,8 +1,6 @@
 [user]
 	name = Masataka Yakura
 	email = masataka.yakura@gmail.com
-[credential]
-	helper = osxkeychain
 [alias]
 	co = checkout
 	st = status -sb
