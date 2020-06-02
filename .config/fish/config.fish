@@ -11,13 +11,14 @@ end
 
 # apps
 abbr --add --global g git
-alias server "python3 -m http.server"
+abbr --add --global server "python3 -m http.server"
 
 # file and directory
 abbr --add --global c clear
-alias u "cd $HOME/"
-alias p "cd $HOME/projects/"
-alias l "cd $HOME/learn/"
+abbr --add --global u "cd $HOME/"
+abbr --add --global p "cd $HOME/projects/"
+abbr --add --global l "cd $HOME/learn/"
+abbr --add --global w "cd $HOME/work/"
 
 # homebrew
 abbr --add --global brewup "brew update && brew upgrade"
