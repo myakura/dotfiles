@@ -1,5 +1,8 @@
 #!/bin/sh
 
+ln --symbolic ~/.dotfiles/.gitconfig ~/.gitconfig
+ln --symbolic ~/.dotfiles/.gitignore ~/.gitignore
+
 mkdir ~/projects
 mkdir ~/learn
 
