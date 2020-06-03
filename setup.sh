@@ -50,8 +50,7 @@ if [ $(uname -n) == "penguin" ] ; then
   cp ~/.dotfiles/Firefox.desktop ~/.local/share/applications/
 
   # install fonts
-  # apt install fonts-roboto
-  # apt install fonts-noto-cjk-extra
-  # apt install fonts-noto-color-emoji
-  # apt install fonts-ricty-diminished
+  sudo apt install fonts-noto-cjk-extra
+  sudo apt install fonts-noto-color-emoji
+  sudo apt install fonts-ricty-diminished
 fi
