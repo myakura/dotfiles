@@ -3,8 +3,8 @@
 ln --symbolic ~/.dotfiles/.gitconfig ~/.gitconfig
 ln --symbolic ~/.dotfiles/.gitignore ~/.gitignore
 
-mkdir ~/projects
-mkdir ~/learn
+mkdir -p ~/projects
+mkdir -p ~/learn
 
 mkdir -p ~/.config/fish/
 ln --symbolic ~/.dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
