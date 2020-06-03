@@ -3,18 +3,19 @@
 mkdir ~/projects
 mkdir ~/learn
 
-# install homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-brew update
-brew upgrade
-
-# install essentials
-brew install git
-brew install fish
-
-# macOS apps
+# macOS
 if [ $(uname) == "Darwin" ] ; then
+
+  # install homebrew
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+  brew update
+  brew upgrade
+
+  brew install git
+  brew install fish
+
+  # apps
   brew cask install iterm2
   brew cask install imagealpha
   brew cask install imageoptim
