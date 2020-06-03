@@ -36,11 +36,18 @@ fi
 
 # Crostini
 if [ $(uname -n) == "penguin" ] ; then
-  # install firefox (beta)
+
+  # install Firefox
+  sudo apt install libdbus-glib-1-2
+
+  mkdir -p ~/apps/
+  cd ~/apps/
   wget -O FirefoxSetup.tar.bz2 "https://download.mozilla.org/?product=firefox-beta-latest-ssl&os=linux64&lang=en-US"
   tar xjf FirefoxSetup.tar.bz2
-  mv firefox /usr/local/bin
-  mv Firefox.desktop ~/.local/share/applications
+  rm FirefoxSetup.tar.bz2
+
+  mkdir -p ~/.local/share/applications/
+  cp ~/.dotfiles/Firefox.desktop ~/.local/share/applications/
 
   # install fonts
   # apt install fonts-roboto

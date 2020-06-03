@@ -1,5 +1,5 @@
 [Desktop Entry]
 Type=Application
 Name=Firefox
-Exec=/usr/local/bin/firefox/firefox
-Icon=/usr/local/bin/firefox/browser/chrome/icons/default/default128.png
+Exec=/home/myakura/apps/firefox/firefox
+Icon=/home/myakura/apps/firefox/browser/chrome/icons/default/default128.png
