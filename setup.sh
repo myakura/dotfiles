@@ -34,8 +34,6 @@ fi
 # Crostini
 if [ $(uname -n) == "penguin" ] ; then
   # install firefox (beta)
-  brew install wget
-  brew install bzip2
   wget -O FirefoxSetup.tar.bz2 "https://download.mozilla.org/?product=firefox-beta-latest-ssl&os=linux64&lang=en-US"
   tar xjf FirefoxSetup.tar.bz2
   mv firefox /usr/local/bin
