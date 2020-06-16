@@ -57,4 +57,10 @@ if [ $(uname -n) == "penguin" ] ; then
   sudo apt install fonts-noto-cjk-extra
   sudo apt install fonts-noto-color-emoji
   sudo apt install fonts-ricty-diminished
+
+  # install Japanese input
+  sudo apt install fcitx-mozc
+  sudo echo -e "Environment=\"GTK_IM_MODULE=fcitx\"\nEnvironment=\"QT_IM_MODULE=fcitx\"\nEnvironment=\"XMODIFIERS=@im=fcitx\"" >> /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf
+  sudo echo -e "/usr/bin/fcitx-autostart" >> ~/.sommelierrc
+  echo "installed fcitx-mozc. restart the shell and open fcitx-configtool to add Mozc."
 fi
