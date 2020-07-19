@@ -44,11 +44,9 @@ if [ $(uname -n) == "penguin" ] ; then
   # install Firefox
   sudo apt install libdbus-glib-1-2
 
-  mkdir -p ~/apps/
-  cd ~/apps/
-  wget -O FirefoxSetup.tar.bz2 "https://download.mozilla.org/?product=firefox-beta-latest-ssl&os=linux64&lang=en-US"
-  tar xjf FirefoxSetup.tar.bz2
-  rm FirefoxSetup.tar.bz2
+  wget -O FirefoxSetup.tar.bz2 -P ~/apps/ "https://download.mozilla.org/?product=firefox-beta-latest-ssl&os=linux64&lang=en-US"
+  tar xjf ~/apps/FirefoxSetup.tar.bz2
+  rm ~/apps/FirefoxSetup.tar.bz2
 
   mkdir -p ~/.local/share/applications/
   sudo echo -e "[Desktop Entry]\nType=Application\nName=Firefox\nExec=/home/myakura/apps/firefox/firefox\nIcon=/home/myakura/apps/firefox/browser/chrome/icons/default/default128.png\n" >> ~/.local/share/applications/Firefox.desktop
