@@ -7,7 +7,7 @@ mkdir -p ~/projects
 mkdir -p ~/learn
 
 mkdir -p ~/.config/fish/
-ln --symbolic ~/.dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
+ln --symbolic ~/.dotfiles/fish/config.fish ~/.config/fish/config.fish
 source ~/.config/fish/config.fish
 
 # macOS
