@@ -51,7 +51,7 @@ if [ $(uname -n) == "penguin" ] ; then
   rm FirefoxSetup.tar.bz2
 
   mkdir -p ~/.local/share/applications/
-  cp ~/.dotfiles/Firefox.desktop ~/.local/share/applications/
+  sudo echo -e "[Desktop Entry]\nType=Application\nName=Firefox\nExec=/home/myakura/apps/firefox/firefox\nIcon=/home/myakura/apps/firefox/browser/chrome/icons/default/default128.png\n" >> ~/.local/share/applications/Firefox.desktop
 
   # install fonts
   sudo apt install fonts-noto-cjk-extra
