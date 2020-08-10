@@ -22,6 +22,7 @@ abbr --add --global w "cd $HOME/work/"
 
 # homebrew
 abbr --add --global brewup "brew update && brew upgrade"
+abbr --add --global aptup "sudo apt update && sudo apt upgrade"
 
 # git
 abbr --add --global fumum "git fetch upstream && git merge upstream/master"
