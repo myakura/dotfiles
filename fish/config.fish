@@ -3,10 +3,10 @@ set fish_greeting ""
 
 # functions
 function config-edit
-  vi ~/.config/fish/config.fish
+	vi ~/.config/fish/config.fish
 end
 function config-reload
-  source ~/.config/fish/config.fish
+	source ~/.config/fish/config.fish
 end
 
 # apps
