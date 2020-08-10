@@ -20,7 +20,7 @@ abbr --add --global p "cd $HOME/projects/"
 abbr --add --global l "cd $HOME/learn/"
 abbr --add --global w "cd $HOME/work/"
 
-# homebrew
+# homebrew/apt
 abbr --add --global brewup "brew update && brew upgrade"
 abbr --add --global aptup "sudo apt update && sudo apt upgrade"
 
