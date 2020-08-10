@@ -1,7 +1,7 @@
 # fish
 set fish_greeting ""
 
-# functions
+# config
 function config-edit
 	vi ~/.config/fish/config.fish
 end
