@@ -6,8 +6,6 @@
 	st = status -sb
 	br = branch
 	lg = log --graph --pretty=oneline --decorate --date=short --abbrev-commit --branches
-	mom = merge origin/master
-	mum = merge upstream/master
 	move = mv
 	undo = reset --soft HEAD^
 	amend = commit --amend --reuse-message=HEAD
