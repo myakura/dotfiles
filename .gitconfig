@@ -16,5 +16,6 @@
 	remotes = remote -v
 [core]
 	excludesfile = ~/.gitignore
+	editor = vim
 [init]
 	defaultBranch = main
