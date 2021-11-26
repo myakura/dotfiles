@@ -5,6 +5,7 @@ ln --symbolic ~/.dotfiles/.gitignore ~/.gitignore
 
 mkdir -p ~/projects
 mkdir -p ~/learn
+mkdir -p ~/contribute
 
 mkdir -p ~/.config/fish/
 ln --symbolic ~/.dotfiles/fish/config.fish ~/.config/fish/config.fish
