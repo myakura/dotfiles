@@ -19,3 +19,15 @@
 	editor = vim
 [init]
 	defaultBranch = main
+[pull]
+	ff = only
+[gpg]
+	format = ssh
+[diff]
+	algorithm = histogram
+[merge]
+	conflictstyle = zdiff3
+[fetch]
+	prune = true
+[branch]
+	sort = -committerdate
