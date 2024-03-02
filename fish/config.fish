@@ -25,7 +25,7 @@ abbr --add --global brewup "brew update && brew upgrade"
 abbr --add --global aptup "sudo apt update && sudo apt upgrade"
 
 # git
-abbr --add --global fumum "git fetch upstream && git merge upstream/master"
+abbr --add --global fumum "git fetch upstream && git merge upstream/main"
 
 # scaffolding
 function scaffold -d "create a project with a bit of initialization"
